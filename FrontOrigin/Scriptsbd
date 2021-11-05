@@ -1,0 +1,33 @@
+--DB [Archivo] User pc autenticacion windows
+
+CREATE TABLE [dbo].[home](
+	[tarjeta] [varchar](255) NOT NULL,
+	[fecha] [varchar](255) NULL,
+	[codoperacion] [varchar](255) NULL,
+	[cantidad] [varchar](255) NULL,
+	pin numeric (13,0),
+	bloqueado numeric (13,0)
+) 
+
+
+insert into home values ('9999000011113333','10102020','1','1000',1234,1) 
+
+CREATE TABLE [dbo].[balance](
+	[tarjeta] [varchar](255) NOT NULL,
+	[fecha] varchar(255),
+	[codoperacion] [varchar](255) NULL,
+	cantidad [varchar](255) NULL,
+
+) 
+
+insert into  balance values('9999000011113333',GETDATE(),'3',1000)
+
+CREATE TABLE [dbo].reporte(
+	cliente[varchar](255)  NULL,
+	[tarjeta] [varchar](255) NOT NULL,
+	[fecha] varchar(255),
+	cantidad [varchar](255) NULL,
+	balance [varchar](255) NULL,
+) 
+
+insert into reporte values('Agustin','9999000011113333','2020-10-26','100000','2000')

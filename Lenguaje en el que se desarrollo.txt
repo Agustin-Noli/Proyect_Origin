@@ -1,0 +1,5 @@
+Front Angular 10 para iniciar el proyecto (npm install)
+Back .Net core 3.1 Api modificar 
+"ConnectionStrings": "Data Source=DESKTOP-0DAT8UG;Initial Catalog=Archivo; Integrated Security=true"
+
+Base de datos sql server 2018
